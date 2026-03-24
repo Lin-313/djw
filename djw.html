@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不动产投资基金（REITs）科普平台</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background-color: #f7f9fc;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: #2c7be5;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        .card h2 {
+            color: #2c7be5;
+            margin-bottom: 15px;
+            font-size: 22px;
+            border-left: 4px solid #2c7be5;
+            padding-left: 10px;
+        }
+        .info-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .info-item {
+            flex: 1;
+            min-width: 220px;
+            padding: 15px;
+            background: #edf3fd;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .info-item h3 {
+            color: #2c7be5;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        .quiz-section {
+            margin-top: 40px;
+        }
+        .question {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f5f7fa;
+            border-radius: 8px;
+        }
+        .question h3 {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .option {
+            padding: 8px 12px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .option:hover {
+            background: #edf3fd;
+            border-color: #2c7be5;
+        }
+        .option.selected {
+            background: #2c7be5;
+            color: white;
+            border-color: #2c7be5;
+        }
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .correct {
+            color: #28a745;
+        }
+        .wrong {
+            color: #dc3545;
+        }
+        .btn-submit {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 12px;
+            background: #2c7be5;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn-submit:hover {
+            background: #2368c7;
+        }
+        .final-score {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c7be5;
+            margin: 20px 0;
+        }
+        .visual-img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>不动产投资基金（REITs）一站式科普</h1>
+            <p>低门槛投资不动产 · 稳健收益 · 高流动性</p>
+        </header>
+
+        <!-- 基础认知模块 -->
+        <div class="card">
+            <h2>一、REITs 基础认知</h2>
+            <p><strong>定义</strong>：不动产投资信托基金（REITs）是通过发行收益凭证汇集资金，由专业机构投资运营不动产，并将收益按比例分配给投资者的基金。</p>
+            <p><strong>核心优势</strong>：不用全款买房，也能投资商场、产业园、高速公路、仓储物流等优质不动产。</p>
+            <img src="https://picsum.photos/id/1055/800/400" alt="REITs不动产可视化" class="visual-img">
+        </div>
+
+        <!-- 核心特征模块 -->
+        <div class="card">
+            <h2>二、核心特征（可视化）</h2>
+            <div class="info-box">
+                <div class="info-item">
+                    <h3>风险等级</h3>
+                    <p>R2-R3 中低风险</p>
+                </div>
+                <div class="info-item">
+                    <h3>投资门槛</h3>
+                    <p>100元起投</p>
+                </div>
+                <div class="info-item">
+                    <h3>收益来源</h3>
+                    <p>租金+分红+资产增值</p>
+                </div>
+                <div class="info-item">
+                    <h3>流动性</h3>
+                    <p>上市交易，随时买卖</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 投资范围 -->
+        <div class="card">
+            <h2>三、主要投资方向</h2>
+            <p>✅ 基础设施：高速公路、污水处理、新能源电站</p>
+            <p>✅ 产业地产：产业园、物流仓储、数据中心</p>
+            <p>✅ 商业地产：商场、写字楼、公寓</p>
+            <p>✅ 保障性租赁住房</p>
+        </div>
+
+        <!-- 选购要点 -->
+        <div class="card">
+            <h2>四、REITs 选购指南</h2>
+            <p>1. 优先选择<strong>底层资产优质</strong>（人流量高、收益稳定）的项目</p>
+            <p>2. 关注<strong>历史分红率</strong>，越高越稳健</p>
+            <p>3. 选择<strong>大型基金公司</strong>管理产品</p>
+            <p>4. 分散投资，不重仓单一项目</p>
+        </div>
+
+        <!-- 常见误区 -->
+        <div class="card">
+            <h2>五、投资常见误区</h2>
+            <p>❌ 误区1：REITs保本保收益（不保本，有波动）</p>
+            <p>❌ 误区2：和股票一样高风险（风险远低于股票）</p>
+            <p>❌ 误区3：随时买入都能赚钱（受市场、租金影响）</p>
+        </div>
+
+        <!-- 即时测验模块 -->
+        <div class="card quiz-section">
+            <h2>六、知识小测验（5题）</h2>
+            <div class="question" id="q1">
+                <h3>1. REITs 指的是什么？</h3>
+                <div class="options">
+                    <div class="option" onclick="selectOption(1,0)">货币基金</div>
+                    <div class="option" onclick="selectOption(1,1)">不动产投资信托基金</div>
+                    <div class="option" onclick="selectOption(1,2)">股票型基金</div>
+                </div>
+                <div class="result" id="r1"></div>
+            </div>
+
+            <div class="question" id="q2">
+                <h3>2. REITs 的投资门槛是？</h3>
+                <div class="options">
+                    <div class="option" onclick="selectOption(2,0)">100元起</div>
+                    <div class="option" onclick="selectOption(2,1)">10万元起</div>
+                    <div class="option" onclick="selectOption(2,2)">100万元起</div>
+                </div>
+                <div class="result" id="r2"></div>
+            </div>
+
+            <div class="question" id="q3">
+                <h3>3. REITs 属于什么风险等级？</h3>
+                <div class="options">
+                    <div class="option" onclick="selectOption(3,0)">高风险</div>
+                    <div class="option" onclick="selectOption(3,1)">中低风险</div>
+                    <div class="option" onclick="selectOption(3,2)">保本无风险</div>
+                </div>
+                <div class="result" id="r3"></div>
+            </div>
+
+            <div class="question" id="q4">
+                <h3>4. REITs 收益不包括以下哪项？</h3>
+                <div class="options">
+                    <div class="option" onclick="selectOption(4,0)">租金收益</div>
+                    <div class="option" onclick="selectOption(4,1)">分红收益</div>
+                    <div class="option" onclick="selectOption(4,2)">固定存款利息</div>
+                </div>
+                <div class="result" id="r4"></div>
+            </div>
+
+            <div class="question" id="q5">
+                <h3>5. 以下哪项是 REITs 投资误区？</h3>
+                <div class="options">
+                    <div class="option" onclick="selectOption(5,0)">REITs不保本</div>
+                    <div class="option" onclick="selectOption(5,1)">REITs风险比股票低</div>
+                    <div class="option" onclick="selectOption(5,2)">REITs保本保收益</div>
+                </div>
+                <div class="result" id="r5"></div>
+            </div>
+
+            <button class="btn-submit" onclick="checkAll()">提交全部答案</button>
+            <div class="final-score" id="final"></div>
+        </div>
+    </div>
+
+    <script>
+        // 正确答案
+        const answers = [1,0,1,2,2];
+        let userAnswers = [-1,-1,-1,-1,-1];
+        
+        // 选择选项
+        function selectOption(qid, opt) {
+            userAnswers[qid-1] = opt;
+            // 样式重置
+            let options = document.querySelectorAll(`#q${qid} .option`);
+            options.forEach(item => item.classList.remove('selected'));
+            options[opt].classList.add('selected');
+        }
+        
+        // 检查所有题目
+        function checkAll() {
+            let score = 0;
+            for(let i=0;i<5;i++){
+                let res = document.getElementById(`r${i+1}`);
+                if(userAnswers[i] === answers[i]){
+                    res.innerHTML = "✅ 回答正确";
+                    res.className = "result correct";
+                    score += 20;
+                } else {
+                    res.innerHTML = "❌ 回答错误";
+                    res.className = "result wrong";
+                }
+            }
+            document.getElementById('final').innerHTML = `最终得分：${score}分`;
+        }
+    </script>
+</body>
+</html>
